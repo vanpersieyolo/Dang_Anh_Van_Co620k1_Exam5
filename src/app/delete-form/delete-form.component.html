@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Delete Boo</h1>
+    <br>
+    <button type="button" class="btn btn-warning" (click)="back()">Back</button>
+</div>
+<br>
+<div class="container">
+    <h1>Are u sure</h1>
+</div>
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input type="text" class="form-control"  placeholder="Enter title" [(ngModel)]="book.title" name="title" >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Author</label>
+          <input type="text" class="form-control"  placeholder="Enter Author" [(ngModel)] = "book.author" name="author">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Description</label>
+            <input type="text" class="form-control"  placeholder="Enter Description" [(ngModel)] = "book.description" name="description">
+          </div>
+        <button type="button" class="btn btn-primary" (click) = "deleteBook(book.id)">DElete</button>
+      </form>
+</div>
